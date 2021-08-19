@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["StreamConsumer","Wrapper around a consumer’s `appsrc`"],["StreamConsumers","Wrapper around a HashMap of consumers, exists for thread safety and also protects some of the producer state"],["StreamProducer","The interface for transporting media data from one node to another."]]});

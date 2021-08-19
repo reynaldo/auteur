@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["AudioMixingState","Used from our `audiomixer::samples_selected` callback"],["ConsumerSlot","Represents a connection to a producer"],["Mixer","The Mixer actor"],["VideoMixingState","Used from our `compositor::samples_selected` callback"]]});

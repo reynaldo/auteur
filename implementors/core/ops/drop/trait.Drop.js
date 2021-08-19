@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["auteur"] = [{"text":"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.54.0/core/ops/drop/trait.Drop.html\" title=\"trait core::ops::drop::Drop\">Drop</a> for <a class=\"struct\" href=\"auteur/utils/stream_producer/struct.StreamConsumer.html\" title=\"struct auteur::utils::stream_producer::StreamConsumer\">StreamConsumer</a>","synthetic":false,"types":["auteur::utils::stream_producer::StreamConsumer"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
