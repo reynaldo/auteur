@@ -26,23 +26,30 @@ This project depends on:
 
 * gst-plugins-rs (master as of writing)
 
-The most convenient testing platform for this PoC is a Linux machine,
-<https://gitlab.freedesktop.org/gstreamer/gst-build>, enter a devenv
-then build <https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/>
-and export `GST_PLUGIN_PATH`:
+## Building
 
-``` shell
-export GST_PLUGIN_PATH=$GST_PLUGIN_PATH:/path/to/gst-plugins-rs/target/debug
-```
+The most convenient testing platform for this PoC is a Linux machine.
 
 A few GStreamer plugins are needed, make sure to install the dependencies
-for all of those before building gst-build:
+for all of those before building gstreamer:
 
 ``` shell
 git grep "make_element(" | cut -d '"' -f 2 | sort -u
 ```
 
-## Building
+Checkout the the new <https://gitlab.freedesktop.org/gstreamer/gstreamer>
+monorepo and build it with <https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs>
+enabled explicitly:
+
+``` shell
+git clone https://gitlab.freedesktop.org/gstreamer/gstreamer
+cd gstreamer
+meson -Drs=enabled build
+ninja -C build
+ninja -C build devenv
+```
+
+Follow the rest of these instructions by first changing directory to your Auteur checkout from within the GStreamer development environment you entered with the previous command.
 
 ``` shell
 cargo build
